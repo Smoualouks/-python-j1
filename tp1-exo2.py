@@ -1,11 +1,10 @@
-#  saisie d'un entier , pour afficher sa table de multiplication
+#  saisie d'un entier , pour afficher sa table de multi
+from sys import argv
 
-n = int( input("enter un nombre entier:"))
-count = 0
+n = int(argv[1])  # apprcoeh optimiste, pas de vérif de saisie.
 
-if n in range(0, 10001):
-
-   for count in range(0,n):
-    print( n, 'x', count , '=' , n*count)
-else:
-    print(" SVP, entrer un nombre entre 0 et 1000 !")
+if n < 0 or n > 1000:
+    print("Doit être compris entre 0 et 1000")
+    exit(1)
+for i in range(11):
+    print(" %d x %d = %d " % (n, i, n*i))
