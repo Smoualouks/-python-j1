@@ -16,7 +16,7 @@ while True:
   else:
       print("Mon chiffre est plus grand")
     
-print("Bravo ! Le chiffre secret à deviner était bien str(SECRET)")
+print("Bravo ! Le chiffre secret à deviner était bien:", SECRET)
      
 
   
